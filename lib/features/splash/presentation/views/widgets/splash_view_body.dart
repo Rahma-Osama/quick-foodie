@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:quick_foodie/core/utils/app_router.dart';
 import 'package:quick_foodie/core/utils/assets.dart';
 
 import 'sliding_text.dart';
@@ -65,7 +66,7 @@ class _SplashViewbodyState extends State<SplashViewbody>
     Future.delayed(
       const Duration(seconds: 2),
           () {
-        // GoRouter.of(context).push(AppRoutes.kHomeView);
+        GoRouter.of(context).pushReplacement(AppRouter.onBoarding);
       },
     );
   }

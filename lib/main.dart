@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quick_foodie/core/utils/app_colors.dart';
 import 'package:quick_foodie/core/utils/app_router.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class QuickFoodie extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       theme: ThemeData(
-        textTheme: GoogleFonts.aBeeZeeTextTheme()
+        textTheme: GoogleFonts.aBeeZeeTextTheme(),
+        primaryColor: AppColors.mainRed,
       ),
       routerConfig: AppRouter.router,
     );
