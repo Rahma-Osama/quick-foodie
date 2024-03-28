@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:quick_foodie/features/auth/presentation/views/login_view.dart';
 import 'package:quick_foodie/features/on_boarding/presentation/views/on_boarding_view.dart';
 import 'package:quick_foodie/features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
 
   static const String onBoarding='/onBoarding';
+  static const String login='/login';
   static final GoRouter router = GoRouter(routes: <RouteBase>[
     GoRoute(
         path: '/',
@@ -15,5 +17,10 @@ abstract class AppRouter {
         path: onBoarding,
         builder: (BuildContext context, GoRouterState state) =>
             const OnBoardingView()),
+     GoRoute(
+        path: login,
+        builder: (BuildContext context, GoRouterState state) =>
+            const LoginView()),
+
   ]);
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:quick_foodie/core/utils/app_colors.dart';
+import 'package:quick_foodie/core/utils/app_router.dart';
 import 'package:quick_foodie/core/utils/assets.dart';
 
 class OnBoardingViewBody extends StatelessWidget {
@@ -31,7 +33,8 @@ class OnBoardingViewBody extends StatelessWidget {
       next: const Text("Next", style: TextStyle(color: AppColors.mainRed)),
       showDoneButton: true,
       done: const Text("Done", style: TextStyle(color: AppColors.mainRed)),
-      onDone: () {},
+      onDone: ()=>GoRouter.of(context).pushReplacement(AppRouter.login)
+      ,
     );
   }
 }

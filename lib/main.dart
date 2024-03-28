@@ -14,7 +14,7 @@ class QuickFoodie extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       theme: ThemeData(
-        textTheme: GoogleFonts.aBeeZeeTextTheme(),
+        textTheme: GoogleFonts.manropeTextTheme(),
         primaryColor: AppColors.mainRed,
       ),
       routerConfig: AppRouter.router,
