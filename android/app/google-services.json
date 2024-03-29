@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092801679124",
+    "project_id": "quick-foodie-a46e5",
+    "storage_bucket": "quick-foodie-a46e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092801679124:android:90a59395fb41fe04ebbc01",
+        "android_client_info": {
+          "package_name": "com.example.quick_foodie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUDiCfaotx53CnVcZG2LdWXefv9K2ENhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
