@@ -3,14 +3,14 @@ import 'package:quick_foodie/core/widgets/custom_text_field.dart';
 
 class AuthForm extends StatelessWidget {
   final bool isLogin;
-  const AuthForm({Key? key, required this.isLogin}) : super(key: key);
+  final TextEditingController nameController ;
+  final TextEditingController passwordController;
+  final TextEditingController emailController;
+  final formKey;
+  const AuthForm({Key? key, required this.isLogin, required this.nameController, required this.passwordController, required this.emailController, this.formKey}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController nameController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
-    TextEditingController emailController = TextEditingController();
-    final formKey = GlobalKey<FormState>();
     return Form(
         key: formKey,
         child: Column(
